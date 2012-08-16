@@ -109,7 +109,7 @@ module ActsAsTaggableOn::Taggable
           
             # Destroy old taggings:
             if old_taggings.present?
-              ActsAsTaggableOn::Tagging.destroy_all(:id => old_taggings.map(&:id))
+              #ActsAsTaggableOn::Tagging.destroy_all(:id => old_taggings.map(&:id))
             end
 
             # Create new taggings:
